@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function checkPassword() {
+  var password = document.getElementById("password").value;
+  if(password == "Geheim") {
+	document.getElementById("message").innerHTML = "Password is correct";
+  } else {
+	document.getElementById("message").innerHTML = "Password is incorrect";
+  }
+
+}
+</script>
+</head>
+
+<body>
+<h2>Finale Opdracht</h2>
+
+<p id="demo">A Paragraph</p>
+<input type="text" id="password" name="password"><br><br>
+<button type="button" onclick="checkPassword()">Password</button>
+<p id="message"> </p>
+
+</body>
+</html>
